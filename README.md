@@ -119,6 +119,14 @@ docker pull pmallozzi/wiseml-patterns
 All the arguments passed to the docker image when running it will be passed to the launch_script.sh
 
 For example you can run:
+
+Run one iteration with and without WiseML using the configuration named "light_test_2.json"
 ```
 docker run -it -v ~/evaluations/:/headless/gym-minigrid/evaluations pmallozzi/wiseml-patterns -a -b -t light_test_2.json
+```
+
+
+Run 10 iterations in 10 randomly generated environments using the configuration "grid_7_w_5" to generate them, each iteration is performed by the agent with and without WiseML
+```
+docker run -it -v ~/evaluations/:/headless/gym-minigrid/evaluations pmallozzi/wiseml-patterns -r 10 -i 10 -l -e grid_7_w_5 -a -b
 ```
