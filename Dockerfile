@@ -79,7 +79,7 @@ RUN pip3 install torchvision
 
 RUN pip3 install -r ./wiseml-patterns/requirements.txt
 
-WORKDIR $HOME/gym-minigrid
+WORKDIR $HOME/wiseml-patterns
 
 ENTRYPOINT ["./entrypoint.sh"]
 CMD [""]
