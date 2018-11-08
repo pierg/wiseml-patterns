@@ -20,7 +20,7 @@ python-utils==2.3.0
 pytz==2018.3
 PyYAML==3.12
 pyzmq==17.0.0
-requests==2.18.4
+requests>=2.20.0
 scipy==1.0.1
 sip==4.19.8
 six==1.11.0
