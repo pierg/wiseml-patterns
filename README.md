@@ -113,12 +113,12 @@ Generate a random environment with a light switch using configurations/environme
 The easiest way to launch an experiment and collect results is with docker.
 You can pull the image from dockerhub:
 ```
-docker pull pmallozzi/gym-minigrid:patterns
+docker pull pmallozzi/wiseml-patterns
 ```
 
 All the arguments passed to the docker image when running it will be passed to the launch_script.sh
 
 For example you can run:
 ```
-docker run -it -v ~/evaluations/:/headless/gym-minigrid/evaluations pmallozzi/gym-minigrid:patterns -a -b -t light_test_2.json
+docker run -it -v ~/evaluations/:/headless/gym-minigrid/evaluations pmallozzi/wiseml-patterns -a -b -t light_test_2.json
 ```
