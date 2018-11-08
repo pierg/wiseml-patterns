@@ -77,7 +77,7 @@ RUN pip3 install http://download.pytorch.org/whl/cpu/torch-0.3.1-cp36-cp36m-linu
 RUN pip3 install torchvision
 
 
-RUN pip3 install -r ./gym-minigrid/requirements.txt
+RUN pip3 install -r ./wiseml-patterns/requirements.txt
 
 WORKDIR $HOME/gym-minigrid
 

@@ -18,7 +18,7 @@ pip3 install -r requirements.txt
 If launching from terminal, first export the python environment:
 
 ```
-PYTHONPATH=../gym-minigrid/:../gym-minigrid/gym_minigrid/:./configurations:./:$PYTHONPATH
+PYTHONPATH=../wiseml-patterns/:../wiseml-patterns/gym_minigrid/:./configurations:./:$PYTHONPATH
 export PYTHONPATH
 ```
 
@@ -122,11 +122,11 @@ For example you can run:
 
 Run one iteration with and without WiseML using the configuration named "light_test_2.json"
 ```
-docker run -it -v ~/evaluations/:/headless/gym-minigrid/evaluations pmallozzi/wiseml-patterns -a -b -t light_test_2.json
+docker run -it -v ~/evaluations/:/headless/wiseml-patterns/evaluations pmallozzi/wiseml-patterns -a -b -t light_test_2.json
 ```
 
 
 Run 10 iterations in 10 randomly generated environments using the configuration "grid_7_w_5" to generate them, each iteration is performed by the agent with and without WiseML
 ```
-docker run -it -v ~/evaluations/:/headless/gym-minigrid/evaluations pmallozzi/wiseml-patterns -r 10 -i 10 -l -e grid_7_w_5 -a -b
+docker run -it -v ~/evaluations/:/headless/wiseml-patterns/evaluations pmallozzi/wiseml-patterns -r 10 -i 10 -l -e grid_7_w_5 -a -b
 ```

@@ -108,7 +108,7 @@ while [ $random_iterations -ne $i ]; do
         fi
 
         echo "...setting up python environment..."
-        PYTHONPATH=../gym-minigrid/:../gym-minigrid/gym_minigrid/:./configurations:./:$PYTHONPATH
+        PYTHONPATH=../wiseml-patterns/:../wiseml-patterns/gym_minigrid/:./configurations:./:$PYTHONPATH
         export PYTHONPATH
 
         if ! [ $stop ]; then

@@ -7,7 +7,7 @@ class Configuration():
 
     @staticmethod
     def file_path(filename="main"):
-        config_file_path = os.path.abspath(__file__ + "/../../../" + "/gym-minigrid/configurations/" + filename + ".json")
+        config_file_path = os.path.abspath(__file__ + "/../../../" + "/wiseml-patterns/configurations/" + filename + ".json")
         return config_file_path
 
     @staticmethod
@@ -16,7 +16,7 @@ class Configuration():
 
         :return: Specific configuration file as a python object
         """
-        config_file_path = os.path.abspath(__file__ + "/../../../" + "/gym-minigrid/configurations/" + filename + ".json")
+        config_file_path = os.path.abspath(__file__ + "/../../../" + "/wiseml-patterns/configurations/" + filename + ".json")
         config = None
         with open(config_file_path, 'r') as jsondata:
             configdata = jsondata.read()
@@ -27,7 +27,7 @@ class Configuration():
     def set(key, value, filename="main"):
 
         config_file_path = os.path.abspath(
-            __file__ + "/../../../" + "/gym-minigrid/configurations/" + filename + ".json")
+            __file__ + "/../../../" + "/wiseml-patterns/configurations/" + filename + ".json")
 
         with open(config_file_path, "r") as jsondata:
             data = json.load(jsondata)

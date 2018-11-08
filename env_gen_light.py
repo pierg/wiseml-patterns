@@ -14,8 +14,8 @@ parser.add_argument('--rewards_file', type=str, required=False, help="A json fil
                                                                       "The values should be the wanted rewards "
                                                                       "of the actions")
 
-environment_path = "../gym-minigrid/gym_minigrid/envs/"
-configuration_path = "../gym-minigrid/configurations/"
+environment_path = "../wiseml-patterns/gym_minigrid/envs/"
+configuration_path = "../wiseml-patterns/configurations/"
 random_token = randint(0,9999)
 
 """ This script creates a random environment in the gym_minigrid/envs folder. It uses a token_hex(4) 
