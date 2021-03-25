@@ -18,7 +18,7 @@ PyQt5==5.10.1
 python-dateutil==2.7.2
 python-utils==2.3.0
 pytz==2018.3
-PyYAML==3.12
+PyYAML==5.4
 pyzmq==17.0.0
 requests>=2.20.0
 scipy==1.0.1
